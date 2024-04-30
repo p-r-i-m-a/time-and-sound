@@ -93,7 +93,7 @@ namespace time_and_sound
 
             
             _spriteBatch.Draw(bombTexture, bombRect, Color.White);
-            _spriteBatch.DrawString(TimeFont,(10 - seconds).ToString(), new Vector2(270, 200), Color.Black);
+            _spriteBatch.DrawString(TimeFont,(10 - seconds).ToString("0:00"), new Vector2(270, 200), Color.Black);
             if (exploaded)
             {
                 _spriteBatch.Draw(boomText, boombRect, Color.White);
